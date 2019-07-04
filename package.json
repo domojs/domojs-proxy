@@ -1,12 +1,18 @@
 {
-	"name":"domojs-proxy",
-	"version":"0.1.0",
-	"repository":{
-		"type":"git",
-		"url":"https://github.com/npenin/domojs-proxy.git"
-	},
-	"dependencies":{
-	    "http-proxy-middleware":"latest"
-	}
+  "name": "domojs-proxy",
+  "version": "0.1.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/npenin/domojs-proxy.git"
+  },
+  "dependencies": {
+    "http-proxy-middleware": "latest",
+    "snyk": "^1.192.0"
+  },
+  "scripts": {
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
  
